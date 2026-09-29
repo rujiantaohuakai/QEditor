@@ -15,6 +15,12 @@ QEditor 是一个基于 C++17 和 Qt Widgets 的桌面文本编辑器，支持�
 - 使用 Qt 信号与槽连接菜单、工具栏和编辑器；通过 `QSignalBlocker` 避免同步字体控件时再次触发格式修改。
 - 使用 `QFile` 读取文件，使用 `QSaveFile` 写入文件；通过 `QCloseEvent` 处理关闭窗口时的未保存内容。
 
+## 下载与运行
+
+Windows 64 位用户可以下载 [QEditor.zip](Releases/QEditor.zip)，解压后双击其中的 `QEditor.exe` 运行。压缩包包含 Qt 运行库和插件，无需安装 Qt 或自行编译。
+
+请先完整解压压缩包，并保留 `QEditor.exe`、DLL 文件和 `platforms` 等目录的相对位置；不要只单独复制可执行文件。该压缩包适用于 Windows 64 位系统。
+
 ## 构建与运行
 
 项目使用 qmake，已在 **Qt 6.9.3、MinGW 64-bit、Windows** 环境下构建通过。
