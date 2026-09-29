@@ -1,0 +1,20 @@
+# Qt Creator user settings and caches
+*.pro.user*
+*.autosave
+.qtc_clangd/
+
+# Shadow builds and in-source build output
+/build/
+/debug/
+/release/
+.qmake.cache
+.qmake.stash
+Makefile
+Makefile.Debug
+Makefile.Release
+*.o
+*.obj
+*.exe
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
