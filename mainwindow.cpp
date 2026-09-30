@@ -56,6 +56,8 @@ void MainWindow::iniUI()
     ui->mainToolBar->addWidget(comboFont);
 
     setCentralWidget(ui->txtEdit);
+
+    setWindowIcon(QIcon(":/images/images/20.ico"));
 }
 
 void MainWindow::iniSignalSlots()
@@ -339,12 +341,12 @@ void MainWindow::on_actToolbarLabel_triggered(bool checked)
 
 void MainWindow::on_actClear_triggered()
 {
+    // 选中所有内容然后删除，可以撤回操作
     QTextCursor cursor = ui->txtEdit->textCursor();
     cursor.select(QTextCursor::Document);
     cursor.removeSelectedText();
     ui->txtEdit->setTextCursor(cursor);
 }
-
 
 void MainWindow::on_actNew_triggered()
 {
